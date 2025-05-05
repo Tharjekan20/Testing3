@@ -1,0 +1,15 @@
+
+{
+  "name": "anime-recommendation-app",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter mobile dev\" \"pnpm --filter backend start:ts\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
